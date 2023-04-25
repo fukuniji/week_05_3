@@ -1,0 +1,877 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    color: #050606;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+[class*="button"] {
+    cursor: pointer;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/* parts' background-color */
+
+.part_back_grey {
+    background-color: #f0f2f4;
+}
+
+.part_back_black {
+    background-color: #101314;
+}
+
+.part_back_white {
+    background-color: #ffffff;
+}
+
+
+/* box background-color */
+
+.box_dark {
+    background-color: #202425;
+}
+
+.box_lavander {
+    background-color: #f8e9ff;
+}
+
+.box_white {
+    background-color: #ffffff;
+}
+
+
+/* buttons' colors */
+
+.button_black {
+    background: #050606;
+    border: 2px solid #050606;
+}
+
+.button_white-with-border {
+    background: #ffffff;
+    border: 2px solid #050606;
+}
+
+.button_white {
+    background: #ffffff;
+    border: none;
+}
+
+.button_blue {
+    background: #007dff;
+    border: none;
+}
+
+
+/* text colors - except default */
+
+.text_white {
+    color: #ffffff;
+}
+
+.text_half-alfa-white {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.text_black {
+    color: #000000;
+}
+
+.text_half-alfa-dark {
+    color: rgba(5, 6, 6, 0.5);
+}
+
+.text_three-quarters-alfa-dark {
+    color: rgba(5, 6, 6, 0.75);
+}
+
+.text_half-alfa-on-lavander {
+    color: rgba(19, 12, 25, 0.5);
+}
+
+/* button border-radius */
+/* .button_small {
+    border-radius: 4px;
+}
+.button_medium {
+    border-radius: 6px;
+}
+.button_big {
+    border-radius: 8px;
+} */
+
+/* Возможно, лучше задать через перечисление? */
+.main-header__button {
+    border-radius: 6px;
+}
+.intro__button, .fifth__button, .sixth__button, .seventh__button {
+    border-radius: 8px;
+}
+.footer__button {
+    border-radius: 4px;
+}
+
+
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    margin-top: 28px;
+    margin-left: 128px;
+}
+
+.main-header__nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 33px;
+}
+
+.main-header__nav_link {
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: 0.4px;
+    margin-right: 48px;
+}
+
+.main-header__nav>a:not(.main-header__nav_link-active):hover {
+    border-bottom: 2px solid #050606;
+}
+
+.main-header__nav_link-active::after {
+    content: url('/assets/images/arrows.svg');
+    margin-left: 4px;
+}
+
+.main-header__button {
+    width: 146px;
+    height: 44px;
+
+    margin-top: 24px;
+    margin-right: 128px;
+
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+}
+
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding-top: 71px;
+    padding-left: 128px;
+    margin-bottom: 80px;
+}
+
+.intro__h2s {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    margin-bottom: 45px;
+}
+
+.intro__h2s_text {
+    font-size: 43px;
+    line-height: 49px;
+    letter-spacing: 2.4px;
+}
+.intro__content_p {
+    display: flex;
+    max-height: 120px;
+    max-width: 879px;
+
+    margin-bottom: 43px;
+}
+.intro__content_text {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0.8px;
+}
+
+.intro__button {
+    width: 218px;
+    height: 62px;
+
+    margin-right: 48px;
+
+    font-size: 19px;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+}
+
+.intro__link:hover {
+    border-bottom: 2px solid #050606;
+    /* text-decoration: underline; */
+}
+
+.intro__link_text{
+    font-size: 19px;
+    line-height: 158%;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+
+.second {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 96px;
+}
+
+.second__h2 {
+    margin-bottom: 25px;
+}
+
+.second__h2_text {
+    font-size: 54px;
+    line-height: 80px;
+    text-align: center;
+    letter-spacing: 3.2px;
+}
+
+.second__content_text {
+    font-size: 31px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.8px;
+
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* сделать при наведении белым */
+.second__content_text:hover {
+    color: #ffffff;
+}
+
+.second__content_p {
+    padding-left: 141px;
+    padding-right: 142px;
+    margin-bottom: 91px;
+}
+
+.second__box {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 256px;
+}
+
+.box {
+    max-width: 944px;
+    width: 944px;
+
+    border-radius: 16px;
+}
+
+.box_more-round {
+    border-radius: 24px;
+}
+
+.second__h3_text {
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.second__box-content_text {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+}
+
+.second__box-item {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.05);
+    padding-left: 48px;
+    padding-top: 63px;
+    padding-bottom: 57px;
+}
+/* все, кроме последнего чайлда */
+.second__box div:last-child {
+    border-bottom: none;
+}
+
+.second__box-item_plus-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.second__box-item-text {
+    width: 375px;
+    padding-top: 63px;
+    padding-bottom: 57px;
+}
+
+.second__box-img {
+    width: 472px;
+}
+
+
+/* опять не получается с флексами */
+.third {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    flex-wrap: nowrap;
+
+    width: 100%;
+    /* width: 850px; */
+    padding-left: 218px;
+    padding-top: 254px;
+    padding-right: 132px;
+    padding-bottom: 163px;
+}
+
+.third__h2 {
+    width: 134px;
+    height: 66px;
+}
+
+.third__content_p {
+    width: 636px;
+    height: 240px;
+}
+
+.third__h2_text {
+    font-size: 60px;
+    line-height: 65px;
+    /* text-align: right; */
+    letter-spacing: 3.2px;
+}
+
+.third__content_text {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0.8px;
+}
+
+
+.fourth {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+
+    width: 100%;
+    padding-left: 128px;
+}
+
+.fourth__h2 {
+    margin-bottom: 24px;
+}
+
+.fourth__h2_text {
+    font-size: 58px;
+    line-height: 65px;
+    letter-spacing: 3.2px;
+}
+
+.fourth__content_p{
+    width: 892px;
+    margin-bottom: 43px;
+}
+
+.fourth__content_text {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0.8px;
+}
+
+
+.fifth {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    padding-top: 165px;
+}
+
+.fifth__h2 {
+    margin-bottom: 24px;
+}
+
+.fifth__h2_text {
+    font-size: 53px;
+    line-height: 65px;
+    letter-spacing: 3.2px;
+}
+
+.fifth__content_p {
+    padding: 0 235px;
+    margin-bottom: 83px;
+}
+
+.fifth__content_p:nth-of-type(2) {
+    padding: 0 295px;
+    margin-bottom: 27px;
+}
+
+.fifth__content_text {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0.8px;
+
+    text-align: center;
+}
+
+.fifth__h3 + p {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+}
+
+.fifth__box {
+    margin-bottom: 164px;
+    padding: 48px;
+}
+
+.fifth__h3 {
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.fifth__box section:nth-child(2) {
+    margin: 96px 0;
+}
+
+.fifth__box:nth-of-type(2) {
+    padding: 56px;
+    justify-content: space-between;
+    row-gap: 33px;
+    margin: 0;
+}
+
+/* не получилось упростить с помощью .text_black, не стала прописывать этот класс в каждый <h4> и <p> внутри fifth__box-item; думала, что цвет текста унаследуется от родительского <div>, но он перебивается * -- универсальным селектором */
+
+.fifth__box-item h4 {
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+    margin-top: 24px;
+
+    color: #000000;
+}
+
+.fifth__box-item p {
+    font-size: 14px;
+    line-height: 21px;
+
+    color: #000000;
+}
+
+.fifth__button {
+    width: 268px;
+    height: 62px;
+
+    font-size: 19px;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+
+    margin-bottom: 80px;
+}
+
+.fifth__box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.fifth__box-item {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.fifth__box-img {
+    width: 398px;
+}
+
+
+.sixth {
+    display: flex;
+    flex-direction: column;
+}
+
+.sixth__h2 {
+    margin-top: 172px;
+    margin-bottom: 25px;
+}
+
+.sixth__h2_text {
+    font-size: 53px;
+    line-height: 80px;
+    text-align: center;
+    letter-spacing: 3.2px;
+}
+
+.sixth__content_p {
+    margin-bottom: 83px;
+}
+
+.sixth__content_text {
+    font-size: 31px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.8px;
+}
+
+.sixth__boxes {
+    display: flex;
+    flex-direction: column;
+    gap: 40px 0;
+
+    margin-bottom: 176px;
+}
+
+.sixth__box {
+    padding: 48px;
+}
+
+.sixth__box>h4 {
+    font-size: 20px;
+    line-height: 30px;
+
+    color: #000000;
+
+    margin-bottom: 9px;
+}
+
+.sixth__box>p:first-of-type {
+    font-size: 48px;
+    line-height: 72px;
+
+    color: #000000;
+
+    margin-bottom: 7px;
+}
+
+.sixth__box-span {
+    font-size: 24px;
+    line-height: 36px;
+
+    color: #000000;
+
+    margin-left: 12px;
+}
+
+.sixth__box>p:nth-of-type(2) {
+    font-size: 19px;
+    line-height: 25px;
+    letter-spacing: 0.5px;
+}
+
+.sixth__box-list {
+    list-style: none;
+
+    margin: 40px 0 ;
+}
+
+.sixth__box-list li::before {
+    content: url('/assets/images/marker.svg');
+    margin-right: 8px;
+}
+
+
+
+.sixth__box-list li {
+    font-size: 16px;
+    line-height: 26px;
+
+    color: #000000;
+
+    padding-bottom: 14px;
+}
+
+.sixth__button {
+    width: 848px;
+    height: 62px;
+
+    font-size: 19px;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+}
+
+.seventh {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    padding: 174px 156px;
+}
+
+.seventh__h2 {
+    margin-bottom: 25px;
+}
+
+.seventh__content_p {
+    margin-bottom: 50px;
+}
+
+.seventh__h2_text {
+    font-size: 54px;
+    line-height: 80px;
+    text-align: center;
+    letter-spacing: 3.2px;
+}
+
+.seventh__content_text {
+    font-size: 31px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.8px;
+}
+
+.seventh__button-plus-a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0 48px;
+}
+
+.seventh__button-plus-a>a {
+    font-size: 19px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+.seventh__button-plus-a>a:hover {
+    /* border-bottom: 2px solid #ffffff; */
+    
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 15px;
+    text-underline-position: under;
+}
+
+.seventh__button {
+    width: 214px;
+    height: 58px;
+
+    font-size: 19px;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+
+    /* text-align: center; */
+}
+
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+
+    width: 100%;
+    padding-left: 128px;
+    padding-top: 128px;
+    padding-right: 128px;
+}
+
+.footer__first-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    column-gap: 60px;
+
+    /* width: 100%; */
+}
+
+.footer__logo-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 177px;
+    width: 200px;
+    /* flex-basis: 200px; */
+    flex-shrink: 0;
+
+}
+
+.footer__logo-text {
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: 0.45px;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    /* flex-basis: 0; */
+    column-gap: 24px;
+}
+
+/* не поняла, почему, наверное, из-за того, что <img> обернуты в <a>, но без этого применяется шрифт 32px от * -- универсального селектора */
+.social-icons>a {
+    font-size: 16px;
+}
+
+/* не получается выровнять, как в макете, может, попробовать колонки? */
+.footer__nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: space-between;
+    gap: 47px 100px;
+}
+
+.footer__nav-item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer__nav_h4 {
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 6px;
+}
+
+.footer__nav_link {
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.35px;
+}
+
+.footer__second-block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: last baseline;
+
+    width: 944px;
+    padding-top: 96px;
+}
+
+
+.footer__second-block-content>h4 {
+    font-size: 20px;
+    line-height: 36px;
+    letter-spacing: 1.2px;
+}
+
+.footer__content_p {
+    font-size: 11px;
+    line-height: 26px;
+}
+
+.footer__subscribe-form {
+    display: flex;
+    flex-direction: column;
+    /* align-items: baseline; */
+}
+
+.footer__subscribe-form_input {
+    border-bottom: 1px solid #B3B6B7;
+
+    padding-bottom: 14px;
+}
+
+/* input[type="email"] */
+.footer__subscribe-form_input input {
+    border: none;
+    outline: 0;
+    border-radius: 6px;
+}
+
+/* не самое удачное решение, но хотелось как-то дать понять пользователю, что здесь есть поле ввода */
+.footer__subscribe-form_input input:hover {
+    background-color: #E7E7E7;
+}
+
+.footer__subscribe-form p {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.footer__button {
+    width: 81px;
+    height: 29px;
+
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.35px;
+}
+
+
+.footer [class$="block"] {
+    border-bottom: 2px solid #E7E7E7;
+
+    padding-bottom: 100px;
+}
+/* все, кроме последнего имеют цветную нижнюю границу */
+.footer div:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+
+/* как правильно задавать ширину, чтобы применилось justify-content: space-between; ? */
+.footer__third-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+
+    width: 944px;
+    margin-bottom: 65px;
+}
+
+.footer__copy {
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.3px;
+}
+
+.footer__terms-cookies a {
+    font-size: 10px;
+    letter-spacing: 0.3px;
+
+    margin-left: 24px;
+}
